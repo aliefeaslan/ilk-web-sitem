@@ -235,3 +235,32 @@ body.light-theme {
   color: var(--text);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 120px 16px 20px;
+  background: var(--background);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+  background: var(--surface);
+}
