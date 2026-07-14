@@ -210,3 +210,28 @@ footer {
   font-size: 1.1rem;
   line-height: 1.7;
 }
+
+body.light-theme {
+  color-scheme: light;
+  --background: #f4f7f5;
+  --surface: #ffffff;
+  --surface-light: #e5f1ed;
+  --text: #102321;
+  --muted: #4b625e;
+  --accent: #0f766e;
+  --accent-dark: #ffffff;
+  --line: rgba(16, 35, 33, 0.15);
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  margin: 0;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
