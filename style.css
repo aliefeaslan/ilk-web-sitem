@@ -189,3 +189,24 @@ footer {
     margin-bottom: 42px;
   }
 }
+
+
+.about {
+  margin-bottom: 100px;
+  padding: clamp(28px, 5vw, 56px);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: linear-gradient(145deg, var(--surface-light), var(--surface));
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about > p:last-child {
+  max-width: 700px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
