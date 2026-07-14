@@ -8,13 +8,22 @@ celebrateButton.addEventListener("click", () => {
 });
 
 const themeButton = document.querySelector("#theme-button");
-
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+  document.body.classList.add("light-theme");
+  themeButton.textContent = "Koyu temaya geç";
+}
 themeButton.addEventListener("click", () => {
   document.body.classList.toggle("light-theme");
 
+
+
   const lightThemeIsActive =
     document.body.classList.contains("light-theme");
-
+localStorage.setItem(
+  "theme",
+  lightThemeIsActive ? "light" : "dark"
+);
   themeButton.textContent = lightThemeIsActive
     ? "Koyu temaya geç"
     : "Açık temaya geç";
